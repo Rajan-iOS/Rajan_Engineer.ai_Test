@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="FeM-Hz-qYx">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="QxU-GI-1eu" customClass="ViewController" customModule="Algolia_rajan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="QxU-GI-1eu" customClass="ViewController" customModule="Algolia_Rajan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rL8-On-W0b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="96" id="ZZW-h6-4Al">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MyCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCell" rowHeight="96" id="ZZW-h6-4Al" customClass="MyCell" customModule="Algolia_Rajan" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZZW-h6-4Al" id="nJB-ae-Lf8">
@@ -59,6 +59,11 @@
                                                 <constraint firstItem="KjN-gg-RHQ" firstAttribute="leading" secondItem="nJB-ae-Lf8" secondAttribute="leading" constant="15" id="y2j-mb-hm4"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblDate" destination="mys-yz-OcK" id="EVI-fm-wlF"/>
+                                            <outlet property="lblTitle" destination="KjN-gg-RHQ" id="MDO-sb-vQL"/>
+                                            <outlet property="switchToggle" destination="77G-JX-xMe" id="AZD-uU-ft2"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

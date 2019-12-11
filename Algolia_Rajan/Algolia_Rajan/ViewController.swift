@@ -31,3 +31,11 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
         <#code#>
     }
 }
+
+class MyCell: UITableViewCell {
+    
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblDate: UILabel!
+    @IBOutlet weak var switchToggle: UISwitch!
+    
+}
