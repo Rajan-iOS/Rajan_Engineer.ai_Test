@@ -1,0 +1,6 @@
+framework module Pods_Algolia_Rajan {
+  umbrella header "Pods-Algolia_Rajan-umbrella.h"
+
+  export *
+  module * { export * }
+}

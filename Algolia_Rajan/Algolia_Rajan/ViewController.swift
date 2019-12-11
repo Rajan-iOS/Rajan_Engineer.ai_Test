@@ -16,12 +16,32 @@ class ViewController: UIViewController {
     @IBOutlet var FooterView: UIView!
     @IBOutlet weak var ActivityIndicator: UIActivityIndicatorView!
     
+    var refreshControl: UIRefreshControl?
+    var pageCount: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tblView.delegate = self as! UITableViewDelegate
-        tblView.dataSource = self as! UITableViewDataSource
+        tblView.delegate = self
+        tblView.dataSource = self
+        
+        //Add Pull to refresh
+        self.putToRefreshControl()
     }
+    
+    func putToRefreshControl() {
+        if self.refreshControl == nil {
+            refreshControl = UIRefreshControl()
+            refreshControl?.attributedTitle = NSAttributedString(string: "Pull To Refresh")
+            refreshControl?.addTarget(self, action: #selector(pullToRefresh), for: UIControl.Event.valueChanged)
+            self.tblView.addSubview(refreshControl!)
+        }
+    }
+    
+    @objc func pullToRefresh() {
+        self.pageCount = 0
+    }
+
 }
 
 extension ViewController: UITableViewDelegate,UITableViewDataSource {

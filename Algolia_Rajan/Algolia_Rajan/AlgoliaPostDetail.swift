@@ -10,10 +10,9 @@ import SwiftyJSON
 
 class AlgoliaPostDetail: NSObject {
 
-    var title                  : String! = ""
-    var created_at             : String! = ""
-    var isPostSelected         : Bool = false
-    
+    var title: String! = ""
+    var created_at: String! = ""
+    var isPostSelected: Bool = false
     
     required init(dictionary: JSON) {
         if dictionary.isEmpty != true {

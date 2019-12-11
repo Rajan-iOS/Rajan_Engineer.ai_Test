@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Users/pcq143/Documents/engineer_ai/Algolia_Rajan/Algolia_Rajan/AlgoliaPostDetail.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Algolia_Rajan.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
