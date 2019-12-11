@@ -83,15 +83,47 @@
 			isa = PBXGroup;
 			children = (
 				59D014F523A0F69A00B361A7 /* AppDelegate.swift */,
-				59D014F723A0F69B00B361A7 /* ViewController.swift */,
-				59D0150723A0FAAE00B361A7 /* AlgoliaPostDetail.swift */,
-				59D0150923A0FB3500B361A7 /* DateGeneric.swift */,
-				59D014F923A0F69B00B361A7 /* Main.storyboard */,
+				59D0150B23A101C900B361A7 /* Controller */,
+				59D0150F23A1023200B361A7 /* View */,
+				59D0150D23A101FD00B361A7 /* Model */,
+				59D0150E23A1021C00B361A7 /* Helper */,
 				59D014FC23A0F69B00B361A7 /* Assets.xcassets */,
-				59D014FE23A0F69B00B361A7 /* LaunchScreen.storyboard */,
 				59D0150123A0F69B00B361A7 /* Info.plist */,
 			);
 			path = Algolia_Rajan;
+			sourceTree = "<group>";
+		};
+		59D0150B23A101C900B361A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				59D014F723A0F69B00B361A7 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		59D0150D23A101FD00B361A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				59D0150723A0FAAE00B361A7 /* AlgoliaPostDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		59D0150E23A1021C00B361A7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				59D0150923A0FB3500B361A7 /* DateGeneric.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		59D0150F23A1023200B361A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				59D014F923A0F69B00B361A7 /* Main.storyboard */,
+				59D014FE23A0F69B00B361A7 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
