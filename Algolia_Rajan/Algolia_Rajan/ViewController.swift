@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var tblView: UITableView!
+    @IBOutlet var FooterView: UIView!
+    @IBOutlet weak var ActivityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,8 +22,6 @@ class ViewController: UIViewController {
         tblView.delegate = self as! UITableViewDelegate
         tblView.dataSource = self as! UITableViewDataSource
     }
-
-
 }
 
 extension ViewController: UITableViewDelegate,UITableViewDataSource {

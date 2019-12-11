@@ -13,6 +13,8 @@
 		59D014FB23A0F69B00B361A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D014F923A0F69B00B361A7 /* Main.storyboard */; };
 		59D014FD23A0F69B00B361A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59D014FC23A0F69B00B361A7 /* Assets.xcassets */; };
 		59D0150023A0F69B00B361A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D014FE23A0F69B00B361A7 /* LaunchScreen.storyboard */; };
+		59D0150823A0FAAE00B361A7 /* AlgoliaPostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D0150723A0FAAE00B361A7 /* AlgoliaPostDetail.swift */; };
+		59D0150A23A0FB3500B361A7 /* DateGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D0150923A0FB3500B361A7 /* DateGeneric.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		59D014FC23A0F69B00B361A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59D014FF23A0F69B00B361A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59D0150123A0F69B00B361A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59D0150723A0FAAE00B361A7 /* AlgoliaPostDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlgoliaPostDetail.swift; path = /Users/pcq143/Documents/engineer_ai/Algolia_Rajan/Algolia_Rajan/AlgoliaPostDetail.swift; sourceTree = "<absolute>"; };
+		59D0150923A0FB3500B361A7 /* DateGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateGeneric.swift; sourceTree = "<group>"; };
 		5AFB20828CEDEEDFBCF669A3 /* Pods-Algolia_Rajan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algolia_Rajan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Algolia_Rajan/Pods-Algolia_Rajan.release.xcconfig"; sourceTree = "<group>"; };
 		5B38BFE1123659DC7539D735 /* Pods-Algolia_Rajan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algolia_Rajan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Algolia_Rajan/Pods-Algolia_Rajan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +84,8 @@
 			children = (
 				59D014F523A0F69A00B361A7 /* AppDelegate.swift */,
 				59D014F723A0F69B00B361A7 /* ViewController.swift */,
+				59D0150723A0FAAE00B361A7 /* AlgoliaPostDetail.swift */,
+				59D0150923A0FB3500B361A7 /* DateGeneric.swift */,
 				59D014F923A0F69B00B361A7 /* Main.storyboard */,
 				59D014FC23A0F69B00B361A7 /* Assets.xcassets */,
 				59D014FE23A0F69B00B361A7 /* LaunchScreen.storyboard */,
@@ -210,8 +216,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59D0150823A0FAAE00B361A7 /* AlgoliaPostDetail.swift in Sources */,
 				59D014F823A0F69B00B361A7 /* ViewController.swift in Sources */,
 				59D014F623A0F69B00B361A7 /* AppDelegate.swift in Sources */,
+				59D0150A23A0FB3500B361A7 /* DateGeneric.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
