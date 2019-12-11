@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FC0F5AA8A25846356221BCA /* Pods_Algolia_Rajan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C375D7B53BBC94E3322CDE /* Pods_Algolia_Rajan.framework */; };
 		59D014F623A0F69B00B361A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D014F523A0F69A00B361A7 /* AppDelegate.swift */; };
 		59D014F823A0F69B00B361A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D014F723A0F69B00B361A7 /* ViewController.swift */; };
 		59D014FB23A0F69B00B361A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D014F923A0F69B00B361A7 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37C375D7B53BBC94E3322CDE /* Pods_Algolia_Rajan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Algolia_Rajan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D014F223A0F69A00B361A7 /* Algolia_Rajan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algolia_Rajan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D014F523A0F69A00B361A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59D014F723A0F69B00B361A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		59D014FC23A0F69B00B361A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59D014FF23A0F69B00B361A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59D0150123A0F69B00B361A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AFB20828CEDEEDFBCF669A3 /* Pods-Algolia_Rajan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algolia_Rajan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Algolia_Rajan/Pods-Algolia_Rajan.release.xcconfig"; sourceTree = "<group>"; };
+		5B38BFE1123659DC7539D735 /* Pods-Algolia_Rajan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algolia_Rajan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Algolia_Rajan/Pods-Algolia_Rajan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FC0F5AA8A25846356221BCA /* Pods_Algolia_Rajan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B83E0895DFADA0B78C22BE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37C375D7B53BBC94E3322CDE /* Pods_Algolia_Rajan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		509F0B32DB1825D93308F44D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B38BFE1123659DC7539D735 /* Pods-Algolia_Rajan.debug.xcconfig */,
+				5AFB20828CEDEEDFBCF669A3 /* Pods-Algolia_Rajan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		59D014E923A0F69A00B361A7 = {
 			isa = PBXGroup;
 			children = (
 				59D014F423A0F69A00B361A7 /* Algolia_Rajan */,
 				59D014F323A0F69A00B361A7 /* Products */,
+				509F0B32DB1825D93308F44D /* Pods */,
+				1B83E0895DFADA0B78C22BE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59D0150423A0F69B00B361A7 /* Build configuration list for PBXNativeTarget "Algolia_Rajan" */;
 			buildPhases = (
+				9CAE293AD449DAF0E6AC83A1 /* [CP] Check Pods Manifest.lock */,
 				59D014EE23A0F69A00B361A7 /* Sources */,
 				59D014EF23A0F69A00B361A7 /* Frameworks */,
 				59D014F023A0F69A00B361A7 /* Resources */,
+				788BE8C576734E2CEA549527 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		788BE8C576734E2CEA549527 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Algolia_Rajan/Pods-Algolia_Rajan-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Algolia_Rajan/Pods-Algolia_Rajan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CAE293AD449DAF0E6AC83A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Algolia_Rajan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		59D014EE23A0F69A00B361A7 /* Sources */ = {
@@ -280,6 +355,7 @@
 		};
 		59D0150523A0F69B00B361A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B38BFE1123659DC7539D735 /* Pods-Algolia_Rajan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +373,7 @@
 		};
 		59D0150623A0F69B00B361A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AFB20828CEDEEDFBCF669A3 /* Pods-Algolia_Rajan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
